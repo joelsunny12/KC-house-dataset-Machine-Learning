@@ -11,10 +11,6 @@ Linear Regression Analysis consists of more than just fitting a linear line thro
 
 3. In order to know that the created model is valid, we create plots to see the predicted line and the points where the required value should be vaild. We know that the model is valid and is useful when it passes the preliminary test, where the least mean square and least squares are verified with various data.
 
-4. It is observed that :
-    1. Square feet of living has the highest R^2 and coefficient of determination 
-    2. Square feet of lving has the least RMSE value 
-
 
 ### Data
 In this dataset we have to predict the sales price of houses in King County, Seattle. It includes homes sold between May 2014 and May 2015. Before doing anything we should first know about the dataset what it contains what are its features and what is the structure of data.
@@ -40,6 +36,9 @@ following seventeen variables:
 14. yr_renovated : It detrmines year of renovation of house.
 15. zipcode : It determines the zipcode of the location of the house.
 
-
+### Result
 
 By observing the data, we can know that the price is dependent on various features like bedrooms(which is most dependent feature), bathrooms, sqft_living(second most important feature), sqft_lot, floors etc. The price is also dependent on the location of the house where it is present. The other features like waterfront, view are less dependent on the price. Of all the records, there are no missing values, which helps us creating better model.
+
+1. Square feet of living has the highest R^2 and coefficient of determination 
+2. Square feet of living has the least RMSE value 
