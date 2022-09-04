@@ -1,7 +1,7 @@
 # KC-house-dataset-Machine-Learning
 
-
-The objective of this kernel is to create a linear regression model for a given dataset( House Sales in King County, USA). The overall idea of regression is to examine two things: (1) does a set of predictor variables do a good job in predicting an outcome (dependent) variable? (2) Which variables in particular are significant predictors of the outcome variable, and in what way do they–indicated by the magnitude and sign of the beta estimates–impact the outcome variable? These regression estimates are used to explain the relationship between one dependent variable and one or more independent variables.
+This exercise is based on a dataset on house sales in King County, USA. The dataset is taken
+from Kaggle – https://www.kaggle.com/harlfoxem/housesalesprediction.
 
 Linear Regression Analysis consists of more than just fitting a linear line through a cloud of data points. It consists of 3 stages – (1) analyzing the correlation and directionality of the data, (2) estimating the model, i.e., fitting the line, and (3) evaluating the validity and usefulness of the model.
 
@@ -19,9 +19,8 @@ Linear Regression Analysis consists of more than just fitting a linear line thro
 ### Data
 In this dataset we have to predict the sales price of houses in King County, Seattle. It includes homes sold between May 2014 and May 2015. Before doing anything we should first know about the dataset what it contains what are its features and what is the structure of data.
 
-The dataset cantains 20 house features plus the price, along with 21613 observations.
-
-The description for the 20 features is given below:
+The dataset consists of 21,613 observations of recently transacted properties, and contains the
+following seventeen variables:
 
 1. id :- It is the unique numeric number assigned to each house being sold.
 2. date :- It is the date on which the house was sold out.
@@ -40,10 +39,7 @@ The description for the 20 features is given below:
 13. yr_built : It detrmines the date of building of the house.
 14. yr_renovated : It detrmines year of renovation of house.
 15. zipcode : It determines the zipcode of the location of the house.
-16. lat : It determines the latitude of the location of the house.
-17. long : It determines the longitude of the location of the house.
-18. sqft_living15 : Living room area in 2015(implies-- some renovations)
-19. sqft_lot15 : lotSize area in 2015(implies-- some renovations)
+
 
 
 By observing the data, we can know that the price is dependent on various features like bedrooms(which is most dependent feature), bathrooms, sqft_living(second most important feature), sqft_lot, floors etc. The price is also dependent on the location of the house where it is present. The other features like waterfront, view are less dependent on the price. Of all the records, there are no missing values, which helps us creating better model.
